@@ -1,6 +1,7 @@
 import { $theme } from "@/lib/store/store"
 import { useStore } from "@nanostores/react"
 import { Toaster as Sonner, type ToasterProps } from "sonner"
+import "sonner/dist/styles.css"
 
 const Toaster = ({ ...props }: ToasterProps) => {
   const theme = useStore($theme)
